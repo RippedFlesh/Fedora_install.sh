@@ -1,0 +1,9 @@
+!#/bin/bash
+sudo dnf install \https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
+sudo dnf install \https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y  
+sudo dnf copr enable refi64/webapp-manager -y
+sudo dnf install webapp-manager -y
+sudo dnf install akmod-nvidia -y
+sudo dnf install akmod-VirtualBox -y
+sudo dnf install VirtualBox -y
+sudo dnf install ansible -y
